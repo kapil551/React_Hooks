@@ -33,3 +33,7 @@
     - Ex: Data Fetching - In componentDidMount and componentDidUpdate
 
     - Ex: Event listeners - In componentDidMount and componentWillUnmount
+
+2. ```useState``` Hook:
+
+    - 
