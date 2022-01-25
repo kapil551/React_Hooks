@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# React Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+0. What are ```Hooks```?
 
-## Available Scripts
+    - They allow you to use react features without having to write a class.
 
-In the project directory, you can run:
+    - Ex: State of a component
 
-### `npm start`
+    - Hooks don't work inside classes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Why Hooks?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    - State can only be used in class components.
 
-### `npm test`
+    - Understand how this keyword works in JavaScript.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - Remember to bind event handles in class components.
 
-### `npm run build`
+    - Classes don't minify very well and make hot reloading very unreliable.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    - This is no particular way to reuse stateful component logic.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - Higher Order Components(HOC) and render pattern do address this problem.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    - Makes the code harder to follow.
 
-### `npm run eject`
+    - There is a need to share stateful logic in a better way.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - Create components for complex scenarios such as data fetching and subscribing to events.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    - Related code is not organized in one place.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    - Ex: Data Fetching - In componentDidMount and componentDidUpdate
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    - Ex: Event listeners - In componentDidMount and componentWillUnmount
 
-## Learn More
+2. Rules of Hooks:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    - Only call hooks at the Top Levels
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    - Don't call hooks inside loops, conditions, or nested functions.
 
-### Code Splitting
+    - Only call hooks from react functions i.e. call them from within react functional components and not just any regular JavaScript function.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. ```useState``` Hook:
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    - https://reactjs.org/docs/hooks-state.html
