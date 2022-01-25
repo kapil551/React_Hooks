@@ -34,6 +34,14 @@
 
     - Ex: Event listeners - In componentDidMount and componentWillUnmount
 
-2. ```useState``` Hook:
+2. Rules of Hooks:
 
-    - 
+    - Only call hooks at the Top Levels
+
+    - Don't call hooks inside loops, conditions, or nested functions.
+
+    - Only call hooks from react functions i.e. call them from within react functional components and not just any regular JavaScript function.
+
+3. ```useState``` Hook:
+
+    - https://reactjs.org/docs/hooks-state.html
