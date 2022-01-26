@@ -2,6 +2,7 @@ import './App.css';
 
 import ClassUseState from './components/classComponents/ClassUseState';
 import UseStateHook from './components/functionalComponents/UseStateHook';
+import UseStateHookWithArray from './components/functionalComponents/UseStateHookWithArray';
 import UseStateHookWithObject from './components/functionalComponents/UseStateHookWithObject';
 import UseStateHookWithPreviousState from './components/functionalComponents/UseStateHookWithPreviousState';
 
@@ -17,7 +18,10 @@ function App() {
       {/* <UseStateHookWithPreviousState /> */}
 
       {/* 3 - useState hook with object */}
-      <UseStateHookWithObject />
+      {/* <UseStateHookWithObject /> */}
+
+      {/* 4 - useState hook with array */}
+      <UseStateHookWithArray />
       
     </div>
   );

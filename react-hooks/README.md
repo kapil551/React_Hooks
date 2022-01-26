@@ -46,6 +46,18 @@
 
     - https://reactjs.org/docs/hooks-state.html
 
+    - The useState hooks lets you add state to functional components.
+
+    - In class component, the state is always an object, with useState hook, the state doesn't have to be an object.
+
+    - The useState hook returns an array with 2 elements.
+
+    - The first element is the ```current value of the state```, and the second element is the ```state setter function```.
+
+    - New state value depends on the previous state value? You can pass a function to the setter function.
+
+    - When dealing with objects or array, always make sure to ```spread your state variable``` and then call the setter function.
+
 4. ```useState hook with previous state```:
 
     - 
