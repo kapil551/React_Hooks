@@ -20,6 +20,14 @@ function UseEffectRunEffectsOnlyOnce() {
             console.log('useEffect is called');
 
             window.addEventListener('mousemove', mousePositionHandler);
+
+            // cleanup --> componentWillUnmount
+            return () => {
+                console.log('component is unmounting');
+
+                window.removeEventListener('mousemove', mousePositionHandler);
+            }
+        
         }, [] // empty dependency list
     )
 

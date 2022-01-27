@@ -4,6 +4,7 @@ import ClassUseState from './components/classComponents/ClassUseState';
 import UseEffectAfterRender from './components/functionalComponents/UseEffectHook/UseEffectAfterRender';
 import UseEffectConditionallyRunEffects from './components/functionalComponents/UseEffectHook/UseEffectConditionallyRunEffects';
 import UseEffectRunEffectsOnlyOnce from './components/functionalComponents/UseEffectHook/UseEffectRunEffectsOnlyOnce';
+import UseEffectWithCleanup from './components/functionalComponents/UseEffectHook/UseEffectWithCleanup';
 import UseStateHook from './components/functionalComponents/UseStateHook';
 import UseStateHookWithArray from './components/functionalComponents/UseStateHookWithArray';
 import UseStateHookWithObject from './components/functionalComponents/UseStateHookWithObject';
@@ -33,8 +34,11 @@ function App() {
       {/* <UseEffectConditionallyRunEffects /> */}
 
       {/* 7 - useEffect hook run effects only once */}
-      <UseEffectRunEffectsOnlyOnce />
-      
+      {/* <UseEffectRunEffectsOnlyOnce /> */}
+
+      {/* 8 - useEffect hook with cleanup */}
+      <UseEffectWithCleanup />
+
     </div>
   );
 }
