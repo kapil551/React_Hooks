@@ -7,7 +7,7 @@ function UseEffectFetchingData() {
   // Data Fetching from API --> Fetch all posts
   useEffect(
     () => {
-      console.log("useEffect is called");
+      console.log("useEffect is called - Fetch all posts");
 
       axios
         .get("https://jsonplaceholder.typicode.com/posts")
@@ -27,9 +27,12 @@ function UseEffectFetchingData() {
   console.log(postId);
   const [post, setPost] = useState({});
 
-  // fectch individual post by their id
+  // fetch individual post by their id
   useEffect(
     () => {
+
+      console.log(`useEffect is called - fetch post with id ${postId}`);
+
       axios
         .get(
           `https://jsonplaceholder.typicode.com/posts/${postId ? postId : 1}`
