@@ -1,6 +1,7 @@
 import './App.css';
 
 import ClassUseState from './components/classComponents/ClassUseState';
+import UseEffectAfterRender from './components/functionalComponents/UseEffectHook/UseEffectAfterRender';
 import UseStateHook from './components/functionalComponents/UseStateHook';
 import UseStateHookWithArray from './components/functionalComponents/UseStateHookWithArray';
 import UseStateHookWithObject from './components/functionalComponents/UseStateHookWithObject';
@@ -21,7 +22,10 @@ function App() {
       {/* <UseStateHookWithObject /> */}
 
       {/* 4 - useState hook with array */}
-      <UseStateHookWithArray />
+      {/* <UseStateHookWithArray /> */}
+
+      {/* 5 - useEffect hook after render */}
+      <UseEffectAfterRender />
       
     </div>
   );

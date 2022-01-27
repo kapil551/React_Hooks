@@ -61,3 +61,27 @@
 4. ```useState hook with previous state```:
 
     - 
+
+5. useState hook with object:
+
+    - 
+
+6. useState hook with array:
+
+    - 
+
+7. useEffect hook:
+
+    - https://reactjs.org/docs/hooks-effect.html
+
+    - Doing ```Side Effect Work```.
+
+    - Update the document title
+
+    - Timer
+
+    - Combine the two or more side effects.
+
+    - The useEffect hook lets you perform ```side effects``` in ```functional components```.
+
+    - It is a close replacement for ```componentDidMount```, ```componentDidUpdate```, and ```componentWillUnmount``` in functional components.
