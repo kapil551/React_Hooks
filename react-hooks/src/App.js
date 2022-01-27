@@ -3,6 +3,7 @@ import './App.css';
 import ClassUseState from './components/classComponents/ClassUseState';
 import UseEffectAfterRender from './components/functionalComponents/UseEffectHook/UseEffectAfterRender';
 import UseEffectConditionallyRunEffects from './components/functionalComponents/UseEffectHook/UseEffectConditionallyRunEffects';
+import UseEffectRunEffectsOnlyOnce from './components/functionalComponents/UseEffectHook/UseEffectRunEffectsOnlyOnce';
 import UseStateHook from './components/functionalComponents/UseStateHook';
 import UseStateHookWithArray from './components/functionalComponents/UseStateHookWithArray';
 import UseStateHookWithObject from './components/functionalComponents/UseStateHookWithObject';
@@ -29,7 +30,11 @@ function App() {
       {/* <UseEffectAfterRender /> */}
       
       {/* 6 - useEffect hook conditionally run effects */}
-      <UseEffectConditionallyRunEffects />
+      {/* <UseEffectConditionallyRunEffects /> */}
+
+      {/* 7 - useEffect hook run effects only once */}
+      <UseEffectRunEffectsOnlyOnce />
+      
     </div>
   );
 }
