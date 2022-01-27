@@ -3,6 +3,7 @@ import './App.css';
 import ClassUseState from './components/classComponents/ClassUseState';
 import UseEffectAfterRender from './components/functionalComponents/UseEffectHook/UseEffectAfterRender';
 import UseEffectConditionallyRunEffects from './components/functionalComponents/UseEffectHook/UseEffectConditionallyRunEffects';
+import UseEffectFetchingData from './components/functionalComponents/UseEffectHook/UseEffectFetchingData';
 import UseEffectRunEffectsOnlyOnce from './components/functionalComponents/UseEffectHook/UseEffectRunEffectsOnlyOnce';
 import UseEffectWithCleanup from './components/functionalComponents/UseEffectHook/UseEffectWithCleanup';
 import UseEffectWithIncorrectDependency from './components/functionalComponents/UseEffectHook/UseEffectWithIncorrectDependency';
@@ -41,7 +42,10 @@ function App() {
       {/* <UseEffectWithCleanup /> */}
 
       {/* 9 - useEffect hook with incorrect dependency */}
-      <UseEffectWithIncorrectDependency />
+      {/* <UseEffectWithIncorrectDependency /> */}
+
+      {/* 10 - fetching data with useEffect hook */}
+      <UseEffectFetchingData />
 
     </div>
   );

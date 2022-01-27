@@ -85,3 +85,13 @@
     - The useEffect hook lets you perform ```side effects``` in ```functional components```.
 
     - It is a close replacement for ```componentDidMount```, ```componentDidUpdate```, and ```componentWillUnmount``` in functional components.
+
+10. fetching data with useEffect hook:
+
+    - Install axios:
+
+        - https://axios-http.com/
+    
+    - Fake API for fetching data:
+
+        - https://jsonplaceholder.typicode.com/
