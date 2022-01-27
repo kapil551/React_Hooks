@@ -5,6 +5,7 @@ import UseEffectAfterRender from './components/functionalComponents/UseEffectHoo
 import UseEffectConditionallyRunEffects from './components/functionalComponents/UseEffectHook/UseEffectConditionallyRunEffects';
 import UseEffectRunEffectsOnlyOnce from './components/functionalComponents/UseEffectHook/UseEffectRunEffectsOnlyOnce';
 import UseEffectWithCleanup from './components/functionalComponents/UseEffectHook/UseEffectWithCleanup';
+import UseEffectWithIncorrectDependency from './components/functionalComponents/UseEffectHook/UseEffectWithIncorrectDependency';
 import UseStateHook from './components/functionalComponents/UseStateHook';
 import UseStateHookWithArray from './components/functionalComponents/UseStateHookWithArray';
 import UseStateHookWithObject from './components/functionalComponents/UseStateHookWithObject';
@@ -37,7 +38,10 @@ function App() {
       {/* <UseEffectRunEffectsOnlyOnce /> */}
 
       {/* 8 - useEffect hook with cleanup */}
-      <UseEffectWithCleanup />
+      {/* <UseEffectWithCleanup /> */}
+
+      {/* 9 - useEffect hook with incorrect dependency */}
+      <UseEffectWithIncorrectDependency />
 
     </div>
   );
