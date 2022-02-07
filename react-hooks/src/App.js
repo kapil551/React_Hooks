@@ -10,6 +10,7 @@ import UseEffectFetchingData from './components/functionalComponents/UseEffectHo
 import UseEffectRunEffectsOnlyOnce from './components/functionalComponents/UseEffectHook/UseEffectRunEffectsOnlyOnce';
 import UseEffectWithCleanup from './components/functionalComponents/UseEffectHook/UseEffectWithCleanup';
 import UseEffectWithIncorrectDependency from './components/functionalComponents/UseEffectHook/UseEffectWithIncorrectDependency';
+import MultipleUseReducer from './components/functionalComponents/UseReducerHook/MultipleUseReducer';
 import UseReducerComplexStateAndAction from './components/functionalComponents/UseReducerHook/UseReducerComplexStateAndAction';
 import UseReducerSimpleStateAndAction from './components/functionalComponents/UseReducerHook/UseReducerSimpleStateAndAction';
 import UseStateHook from './components/functionalComponents/UseStateHook';
@@ -68,7 +69,10 @@ function App() {
           {/* <UseReducerSimpleStateAndAction /> */}
 
           {/* 13 - useReducer - complex state and action */}
-          <UseReducerComplexStateAndAction />
+          {/* <UseReducerComplexStateAndAction /> */}
+
+          {/* 14 - multiple useReducer */}
+          <MultipleUseReducer />
 
         </ChannelContext.Provider>
       </UserContext.Provider>
