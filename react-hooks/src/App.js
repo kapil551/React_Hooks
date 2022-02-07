@@ -1,6 +1,8 @@
+import React from 'react';
 import './App.css';
 
 import ClassUseState from './components/classComponents/ClassUseState';
+import ComponentC from './components/functionalComponents/useContextHook/ComponentC';
 import UseEffectAfterRender from './components/functionalComponents/UseEffectHook/UseEffectAfterRender';
 import UseEffectConditionallyRunEffects from './components/functionalComponents/UseEffectHook/UseEffectConditionallyRunEffects';
 import UseEffectFetchingData from './components/functionalComponents/UseEffectHook/UseEffectFetchingData';
@@ -12,40 +14,52 @@ import UseStateHookWithArray from './components/functionalComponents/UseStateHoo
 import UseStateHookWithObject from './components/functionalComponents/UseStateHookWithObject';
 import UseStateHookWithPreviousState from './components/functionalComponents/UseStateHookWithPreviousState';
 
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
+
 function App() {
   return (
     <div className="App">
 
-      {/* 1 - useState hook */}
-      {/* <ClassUseState />
-      <UseStateHook /> */}
+      <UserContext.Provider value={'Kapil'}>
+        <ChannelContext.Provider value={'Software Developer'}>
 
-      {/* 2 - useState hook with previous state */}
-      {/* <UseStateHookWithPreviousState /> */}
+          {/* 1 - useState hook */}
+          {/* <ClassUseState />
+          <UseStateHook /> */}
 
-      {/* 3 - useState hook with object */}
-      {/* <UseStateHookWithObject /> */}
+          {/* 2 - useState hook with previous state */}
+          {/* <UseStateHookWithPreviousState /> */}
 
-      {/* 4 - useState hook with array */}
-      {/* <UseStateHookWithArray /> */}
+          {/* 3 - useState hook with object */}
+          {/* <UseStateHookWithObject /> */}
 
-      {/* 5 - useEffect hook after render */}
-      {/* <UseEffectAfterRender /> */}
-      
-      {/* 6 - useEffect hook conditionally run effects */}
-      {/* <UseEffectConditionallyRunEffects /> */}
+          {/* 4 - useState hook with array */}
+          {/* <UseStateHookWithArray /> */}
 
-      {/* 7 - useEffect hook run effects only once */}
-      {/* <UseEffectRunEffectsOnlyOnce /> */}
+          {/* 5 - useEffect hook after render */}
+          {/* <UseEffectAfterRender /> */}
+          
+          {/* 6 - useEffect hook conditionally run effects */}
+          {/* <UseEffectConditionallyRunEffects /> */}
 
-      {/* 8 - useEffect hook with cleanup */}
-      {/* <UseEffectWithCleanup /> */}
+          {/* 7 - useEffect hook run effects only once */}
+          {/* <UseEffectRunEffectsOnlyOnce /> */}
 
-      {/* 9 - useEffect hook with incorrect dependency */}
-      {/* <UseEffectWithIncorrectDependency /> */}
+          {/* 8 - useEffect hook with cleanup */}
+          {/* <UseEffectWithCleanup /> */}
 
-      {/* 10 - fetching data with useEffect hook */}
-      <UseEffectFetchingData />
+          {/* 9 - useEffect hook with incorrect dependency */}
+          {/* <UseEffectWithIncorrectDependency /> */}
+
+          {/* 10 - fetching data with useEffect hook */}
+          {/* <UseEffectFetchingData /> */}
+
+          {/* 11 - Context without useContext hook */}
+          <ComponentC />
+
+        </ChannelContext.Provider>
+      </UserContext.Provider>
 
     </div>
   );
