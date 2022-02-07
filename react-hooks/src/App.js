@@ -13,6 +13,7 @@ import UseEffectFetchingData from './components/functionalComponents/UseEffectHo
 import UseEffectRunEffectsOnlyOnce from './components/functionalComponents/UseEffectHook/UseEffectRunEffectsOnlyOnce';
 import UseEffectWithCleanup from './components/functionalComponents/UseEffectHook/UseEffectWithCleanup';
 import UseEffectWithIncorrectDependency from './components/functionalComponents/UseEffectHook/UseEffectWithIncorrectDependency';
+import UseMemoHook from './components/functionalComponents/UseMemoHook/UseMemoHook';
 import MultipleUseReducer from './components/functionalComponents/UseReducerHook/MultipleUseReducer';
 import UseReducerComplexStateAndAction from './components/functionalComponents/UseReducerHook/UseReducerComplexStateAndAction';
 import UseReducerSimpleStateAndAction from './components/functionalComponents/UseReducerHook/UseReducerSimpleStateAndAction';
@@ -88,7 +89,10 @@ function App() {
           {/* <DataFetchingWithUseReducer /> */}
 
           {/* 17 - useCallback hook */}
-          <UseCallbackHook />
+          {/* <UseCallbackHook /> */}
+
+          {/* 18 - useMemo hook */}
+          <UseMemoHook />
 
 
         </ChannelContext.Provider>

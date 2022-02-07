@@ -166,7 +166,7 @@
 
 ![]("./UseReducerWithUseContext.PNG")
 
-### ```useCallback``` hook:
+### ```useCallback``` hook - ```performance optimization```:
 
 - ```React.memo()```:
 
@@ -183,3 +183,11 @@
 - When to useMemo and useCallback?
 
     - https://kentcdodds.com/blog/usememo-and-usecallback
+
+### ```useMemo``` hook - ```performance optimization```:
+
+- https://reactjs.org/docs/hooks-reference.html#usememo
+
+### What is the ```difference b/w useMemo and useCallback``` hooks?
+
+- Search about it
