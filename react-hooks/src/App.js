@@ -3,6 +3,7 @@ import './App.css';
 
 import ClassUseState from './components/classComponents/ClassUseState';
 import DataFetchingWithUseEffect from './components/functionalComponents/DataFetching/DataFetchingWithUseEffect';
+import DataFetchingWithUseReducer from './components/functionalComponents/DataFetching/DataFetchingWithUseReducer';
 import ComponentC from './components/functionalComponents/useContextHook/ComponentC';
 import UseContextHook from './components/functionalComponents/useContextHook/UseContextHook';
 import UseEffectAfterRender from './components/functionalComponents/UseEffectHook/UseEffectAfterRender';
@@ -80,7 +81,10 @@ function App() {
           {/* <UseReducerWithUseContext /> */}
 
           {/* 15 - data fetching with useEffect hook */}
-          <DataFetchingWithUseEffect />
+          {/* <DataFetchingWithUseEffect /> */}
+
+          {/* 16 - data fetching with useReducer hook */}
+          <DataFetchingWithUseReducer />
 
 
         </ChannelContext.Provider>

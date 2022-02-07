@@ -35,7 +35,7 @@ const DataFetchingWithUseEffect = () => {
                         {post.id} : { post.title }
                     </div>
                 )
-              })
+            })
         }
         {
             error !== '' ? error : null
