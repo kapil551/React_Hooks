@@ -166,4 +166,20 @@
 
 ![]("./UseReducerWithUseContext.PNG")
 
-- ```useCallback``` hook:
+### ```useCallback``` hook:
+
+- ```React.memo()```:
+
+    - It is a higher order component that will prevent a functional component from being re-rendered if it's props or state do not change.
+
+- What is a useCallback hook?
+
+    - useCallback is a hook that will return a ```memorized``` version of the callback function that only changes if one of the ```dependencies``` has changed.
+
+- Why useCallback hook?
+
+    - It is useful when ```passing callback functions``` to optimized child components that rely on reference equality to ```prevent unnecessary renders```.
+
+- When to useMemo and useCallback?
+
+    - https://kentcdodds.com/blog/usememo-and-usecallback

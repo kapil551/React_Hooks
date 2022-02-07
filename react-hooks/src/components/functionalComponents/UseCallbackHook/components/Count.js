@@ -6,4 +6,4 @@ const Count = ({ text, count }) => {
     return <div>{text} - {count}</div>;
 };
 
-export default Count;
+export default React.memo(Count); // this will prevent a functional component from being re-rendered if it's props or state do not change.

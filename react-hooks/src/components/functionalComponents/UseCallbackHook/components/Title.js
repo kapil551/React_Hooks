@@ -7,4 +7,4 @@ const Title = () => {
   </div>;
 };
 
-export default Title;
+export default React.memo(Title); // this will prevent a functional component from being re-rendered if it's props or state do not change.

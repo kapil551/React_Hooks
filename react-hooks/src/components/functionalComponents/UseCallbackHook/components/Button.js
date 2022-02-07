@@ -11,4 +11,4 @@ const Button = ({ handleClick, children }) => {
     );
 };
 
-export default Button;
+export default React.memo(Button); // this will prevent a functional component from being re-rendered if it's props or state do not change.
