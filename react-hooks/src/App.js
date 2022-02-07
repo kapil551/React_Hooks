@@ -13,6 +13,7 @@ import UseEffectWithIncorrectDependency from './components/functionalComponents/
 import MultipleUseReducer from './components/functionalComponents/UseReducerHook/MultipleUseReducer';
 import UseReducerComplexStateAndAction from './components/functionalComponents/UseReducerHook/UseReducerComplexStateAndAction';
 import UseReducerSimpleStateAndAction from './components/functionalComponents/UseReducerHook/UseReducerSimpleStateAndAction';
+import UseReducerWithUseContext from './components/functionalComponents/UseReducerHook/UseReducerWithUseContext';
 import UseStateHook from './components/functionalComponents/UseStateHook';
 import UseStateHookWithArray from './components/functionalComponents/UseStateHookWithArray';
 import UseStateHookWithObject from './components/functionalComponents/UseStateHookWithObject';
@@ -72,7 +73,11 @@ function App() {
           {/* <UseReducerComplexStateAndAction /> */}
 
           {/* 14 - multiple useReducer */}
-          <MultipleUseReducer />
+          {/* <MultipleUseReducer /> */}
+
+          {/* 15 - useReducer with useContext */}
+          <UseReducerWithUseContext />
+
 
         </ChannelContext.Provider>
       </UserContext.Provider>

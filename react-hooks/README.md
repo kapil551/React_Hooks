@@ -148,3 +148,14 @@
             useReducer returns a pair of values.
             [newState, dispatch]
           ```
+- useReducer with useContext:
+
+    - userReducer - Local state management.
+
+    - Share state between components - Global state management.
+
+    - ```useReducer + useContext```:
+
+        - useReducer with useContext can be used for global state management.
+
+![]("./UseReducerWithUseContext.PNG")
