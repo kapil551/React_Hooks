@@ -114,9 +114,15 @@
 
     - useState is built using useReducer.
 
-- When to useReducer v/s useState?
+- When to use ```useReducer``` v/s when to use ```useState```?
 
-    - 
+| Scenario | useState | useReducer |
+| --- | --- | --- |
+| **Type of state** | Number, String, Boolean | Object or Array |
+| **Number of State transitions** | One or two | Too many state transitions |
+| **Related state transitions?** | No | Yes |
+| **Business Logic** | No business logic | complex business logic |
+| **Local vs global state** | Local | Global |
 
 - ```reducers``` in JavaScript:
 
