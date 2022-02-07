@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import ClassUseState from './components/classComponents/ClassUseState';
+import DataFetchingWithUseEffect from './components/functionalComponents/DataFetching/DataFetchingWithUseEffect';
 import ComponentC from './components/functionalComponents/useContextHook/ComponentC';
 import UseContextHook from './components/functionalComponents/useContextHook/UseContextHook';
 import UseEffectAfterRender from './components/functionalComponents/UseEffectHook/UseEffectAfterRender';
@@ -76,7 +77,10 @@ function App() {
           {/* <MultipleUseReducer /> */}
 
           {/* 15 - useReducer with useContext */}
-          <UseReducerWithUseContext />
+          {/* <UseReducerWithUseContext /> */}
+
+          {/* 15 - data fetching with useEffect hook */}
+          <DataFetchingWithUseEffect />
 
 
         </ChannelContext.Provider>
