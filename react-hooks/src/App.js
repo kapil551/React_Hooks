@@ -19,6 +19,7 @@ import UseReducerComplexStateAndAction from './components/functionalComponents/U
 import UseReducerSimpleStateAndAction from './components/functionalComponents/UseReducerHook/UseReducerSimpleStateAndAction';
 import UseReducerWithUseContext from './components/functionalComponents/UseReducerHook/UseReducerWithUseContext';
 import UseRefHook from './components/functionalComponents/UseRef/UseRefHook';
+import UseRefHookTwo from './components/functionalComponents/UseRef/UseRefHookTwo';
 import UseStateHook from './components/functionalComponents/UseStateHook';
 import UseStateHookWithArray from './components/functionalComponents/UseStateHookWithArray';
 import UseStateHookWithObject from './components/functionalComponents/UseStateHookWithObject';
@@ -96,8 +97,10 @@ function App() {
           {/* <UseMemoHook /> */}
 
           {/* 19 - useRef hook - part 1 */}
-          <UseRefHook />
+          {/* <UseRefHook /> */}
 
+          {/* 20 - useRef hook - part 2 */}
+          <UseRefHookTwo />
 
         </ChannelContext.Provider>
       </UserContext.Provider>

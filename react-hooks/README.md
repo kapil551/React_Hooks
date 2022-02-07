@@ -195,3 +195,5 @@
 ### ```useRef``` hook:
 
 - useRef is a hook that makes it possible to access DOM nodes directly within functional components.
+
+- It can also be used to store any mutable value, and what is great about useRef is that the value will persist through the re-renders while also not causing any additional renders when the value changes.
