@@ -18,6 +18,7 @@ import MultipleUseReducer from './components/functionalComponents/UseReducerHook
 import UseReducerComplexStateAndAction from './components/functionalComponents/UseReducerHook/UseReducerComplexStateAndAction';
 import UseReducerSimpleStateAndAction from './components/functionalComponents/UseReducerHook/UseReducerSimpleStateAndAction';
 import UseReducerWithUseContext from './components/functionalComponents/UseReducerHook/UseReducerWithUseContext';
+import UseRefHook from './components/functionalComponents/UseRef/UseRefHook';
 import UseStateHook from './components/functionalComponents/UseStateHook';
 import UseStateHookWithArray from './components/functionalComponents/UseStateHookWithArray';
 import UseStateHookWithObject from './components/functionalComponents/UseStateHookWithObject';
@@ -92,7 +93,10 @@ function App() {
           {/* <UseCallbackHook /> */}
 
           {/* 18 - useMemo hook */}
-          <UseMemoHook />
+          {/* <UseMemoHook /> */}
+
+          {/* 19 - useRef hook - part 1 */}
+          <UseRefHook />
 
 
         </ChannelContext.Provider>

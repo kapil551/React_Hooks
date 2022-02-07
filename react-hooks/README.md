@@ -191,3 +191,7 @@
 ### What is the ```difference b/w useMemo and useCallback``` hooks?
 
 - Search about it
+
+### ```useRef``` hook:
+
+- useRef is a hook that makes it possible to access DOM nodes directly within functional components.
