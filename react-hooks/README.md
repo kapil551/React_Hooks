@@ -42,7 +42,7 @@
 
 - Only call hooks from react functions i.e. call them from within react functional components and not just any regular JavaScript function.
 
-### ```useState``` Hook:
+### ```useState``` Hook - ```state```:
 
 - https://reactjs.org/docs/hooks-state.html
 
@@ -70,7 +70,7 @@
 
 - 
 
-### useEffect hook:
+### ```useEffect``` hook - ```side effects```:
 
 - https://reactjs.org/docs/hooks-effect.html
 
@@ -96,10 +96,55 @@
 
     - https://jsonplaceholder.typicode.com/
 
-### useContext Hook:
+### ```useContext``` hook - ```context API```:
 
-![]('../context.PNG')
+![]("./context.PNG")
 
 - Directly send data/props to the required component without having to manually drill down the props through every level of the react component tree, this is where ```context``` comes into picture.
 
 - ```Context``` provides a way to pass data through the component tree without having to pass props down manually at very level.
+
+### ```useReducer``` hook - ```reducers```:
+
+- useReducer is a hook that is used for state management.
+
+- It is an alternative to useState.
+
+- Difference b/w useState and useReducer?
+
+    - useState is built using useReducer.
+
+- When to useReducer v/s useState?
+
+    - 
+
+- ```reducers``` in JavaScript:
+
+    - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+
+- reduce v/s useReducer:
+
+    - reduce in JavaScript:
+
+        - ```JavaScript
+            array.reduce(reducer, initialValue)
+          ```
+        - ```JavaScript
+            singleValue = reducer(accumulator, itemValue)
+          ```
+        - ```JavaScript
+           reduce mathod returns a single value
+          ```
+    
+    - useReducer in react:
+
+        - ```JavaScript
+            useReducer(reducer, initialState)
+          ```
+        - ```JavaScript
+           newState = reducer(currentState, action)
+          ```
+        - ```JavaScript
+            useReducer returns a pair of values.
+            [newState, dispatch]
+          ```
