@@ -154,7 +154,7 @@
             useReducer returns a pair of values.
             [newState, dispatch]
           ```
-- useReducer with useContext:
+- ```useReducer with useContext```:
 
     - userReducer - Local state management.
 
@@ -165,3 +165,5 @@
         - useReducer with useContext can be used for global state management.
 
 ![]("./UseReducerWithUseContext.PNG")
+
+- ```useCallback``` hook:
