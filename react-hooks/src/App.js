@@ -3,6 +3,7 @@ import './App.css';
 
 import ClassUseState from './components/classComponents/ClassUseState';
 import ComponentC from './components/functionalComponents/useContextHook/ComponentC';
+import UseContextHook from './components/functionalComponents/useContextHook/UseContextHook';
 import UseEffectAfterRender from './components/functionalComponents/UseEffectHook/UseEffectAfterRender';
 import UseEffectConditionallyRunEffects from './components/functionalComponents/UseEffectHook/UseEffectConditionallyRunEffects';
 import UseEffectFetchingData from './components/functionalComponents/UseEffectHook/UseEffectFetchingData';
@@ -57,6 +58,9 @@ function App() {
 
           {/* 11 - Context without useContext hook */}
           <ComponentC />
+
+          {/* 12 - Conext with useContext hook */}
+          <UseContextHook />
 
         </ChannelContext.Provider>
       </UserContext.Provider>
