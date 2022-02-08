@@ -98,7 +98,7 @@
 
 ### ```useContext``` hook - ```context API```:
 
-![]("./context.PNG")
+![](../context.PNG)
 
 - Directly send data/props to the required component without having to manually drill down the props through every level of the react component tree, this is where ```context``` comes into picture.
 
@@ -164,7 +164,7 @@
 
         - useReducer with useContext can be used for global state management.
 
-![]("./UseReducerWithUseContext.PNG")
+![](../UseReducerWithUseContext.PNG)
 
 ### ```useCallback``` hook - ```performance optimization```:
 
@@ -192,8 +192,21 @@
 
 - Search about it
 
-### ```useRef``` hook:
+### ```useRef``` hook - ```DOM manipulation```:
 
 - useRef is a hook that makes it possible to access DOM nodes directly within functional components.
 
 - It can also be used to store any mutable value, and what is great about useRef is that the value will persist through the re-renders while also not causing any additional renders when the value changes.
+
+### Custom Hooks:
+
+- A custom hook is baiscally a javaScript function whose name starts with 'use'.
+
+- A custom hook can also call other Hooks if required.
+
+- Why custom hooks?
+
+    - Share logic 
+    - Alternative to HOC's and Render props.
+
+### useDocumentTitle custom hook:

@@ -102,6 +102,8 @@ function App() {
           {/* 20 - useRef hook - part 2 */}
           <UseRefHookTwo />
 
+          {/* 21 - useDocumentTitle custom hook */}
+
         </ChannelContext.Provider>
       </UserContext.Provider>
 
